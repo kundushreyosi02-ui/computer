@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exam Result</title>
+<link rel="stylesheet"href="style.css">
+</head>
+<body class="result-page">
+<div class="result-container">
+<h2>Exam Result</h2>
+<p id="resultText">Take Exam Again</a>
+</div>
+<script>
+const params=new URLSearchParams(window.location.search);
+const score=params.get("score");
+document.getElementById("resultText").innerText='Your Score is ${score}/2';
+</script>
+</body>
+</html>
